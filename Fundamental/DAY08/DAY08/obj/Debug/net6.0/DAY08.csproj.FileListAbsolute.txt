@@ -1,0 +1,15 @@
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\DAY08\DAY08\bin\Debug\net6.0\DAY08.exe
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\DAY08\DAY08\bin\Debug\net6.0\DAY08.deps.json
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\DAY08\DAY08\bin\Debug\net6.0\DAY08.runtimeconfig.json
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\DAY08\DAY08\bin\Debug\net6.0\DAY08.dll
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\DAY08\DAY08\bin\Debug\net6.0\DAY08.pdb
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\DAY08\DAY08\obj\Debug\net6.0\DAY08.csproj.AssemblyReference.cache
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\DAY08\DAY08\obj\Debug\net6.0\DAY08.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\DAY08\DAY08\obj\Debug\net6.0\DAY08.AssemblyInfoInputs.cache
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\DAY08\DAY08\obj\Debug\net6.0\DAY08.AssemblyInfo.cs
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\DAY08\DAY08\obj\Debug\net6.0\DAY08.csproj.CoreCompileInputs.cache
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\DAY08\DAY08\obj\Debug\net6.0\DAY08.dll
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\DAY08\DAY08\obj\Debug\net6.0\refint\DAY08.dll
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\DAY08\DAY08\obj\Debug\net6.0\DAY08.pdb
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\DAY08\DAY08\obj\Debug\net6.0\DAY08.genruntimeconfig.cache
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\DAY08\DAY08\obj\Debug\net6.0\ref\DAY08.dll

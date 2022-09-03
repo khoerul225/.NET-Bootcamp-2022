@@ -1,0 +1,15 @@
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\QUIZ01\QUIZ01\bin\Debug\net6.0\QUIZ01.exe
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\QUIZ01\QUIZ01\bin\Debug\net6.0\QUIZ01.deps.json
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\QUIZ01\QUIZ01\bin\Debug\net6.0\QUIZ01.runtimeconfig.json
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\QUIZ01\QUIZ01\bin\Debug\net6.0\QUIZ01.dll
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\QUIZ01\QUIZ01\bin\Debug\net6.0\QUIZ01.pdb
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\QUIZ01\QUIZ01\obj\Debug\net6.0\QUIZ01.csproj.AssemblyReference.cache
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\QUIZ01\QUIZ01\obj\Debug\net6.0\QUIZ01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\QUIZ01\QUIZ01\obj\Debug\net6.0\QUIZ01.AssemblyInfoInputs.cache
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\QUIZ01\QUIZ01\obj\Debug\net6.0\QUIZ01.AssemblyInfo.cs
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\QUIZ01\QUIZ01\obj\Debug\net6.0\QUIZ01.csproj.CoreCompileInputs.cache
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\QUIZ01\QUIZ01\obj\Debug\net6.0\QUIZ01.dll
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\QUIZ01\QUIZ01\obj\Debug\net6.0\refint\QUIZ01.dll
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\QUIZ01\QUIZ01\obj\Debug\net6.0\QUIZ01.pdb
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\QUIZ01\QUIZ01\obj\Debug\net6.0\QUIZ01.genruntimeconfig.cache
+C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\Fundamental\QUIZ01\QUIZ01\obj\Debug\net6.0\ref\QUIZ01.dll

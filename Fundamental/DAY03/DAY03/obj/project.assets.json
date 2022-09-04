@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Pictures\\Camera Roll\\.NET-Bootcamp-NET-FUNDAMENTAL\\Fundamental\\DAY03\\DAY03\\DAY03.csproj",
+      "projectUniqueName": "D:\\.NET Bootcamp\\C#\\Fundamental\\DAY03\\DAY03\\DAY03.csproj",
       "projectName": "DAY03",
-      "projectPath": "C:\\Users\\User\\Pictures\\Camera Roll\\.NET-Bootcamp-NET-FUNDAMENTAL\\Fundamental\\DAY03\\DAY03\\DAY03.csproj",
+      "projectPath": "D:\\.NET Bootcamp\\C#\\Fundamental\\DAY03\\DAY03\\DAY03.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Pictures\\Camera Roll\\.NET-Bootcamp-NET-FUNDAMENTAL\\Fundamental\\DAY03\\DAY03\\obj\\",
+      "outputPath": "D:\\.NET Bootcamp\\C#\\Fundamental\\DAY03\\DAY03\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

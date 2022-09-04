@@ -12,14 +12,14 @@ namespace EFCore_NorthwindDb.Migrations
                 name: "Students",
                 columns: table => new
                 {
-                    studentId = table.Column<int>(type: "int", nullable: false)
+                    StudentId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    fullName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    FullName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Age = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Students", x => x.studentId);
+                    table.PrimaryKey("PK_Students", x => x.StudentId);
                 });
         }
 

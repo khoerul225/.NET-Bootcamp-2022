@@ -959,20 +959,20 @@ namespace EFCore_NorthwindDb.Migrations
 
             modelBuilder.Entity("EFCore_NorthwindDb.Student", b =>
                 {
-                    b.Property<int>("studentId")
+                    b.Property<int>("StudentId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("studentId"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("StudentId"), 1L, 1);
 
                     b.Property<int>("Age")
                         .HasColumnType("int");
 
-                    b.Property<string>("fullName")
+                    b.Property<string>("FullName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("studentId");
+                    b.HasKey("StudentId");
 
                     b.ToTable("Students");
                 });

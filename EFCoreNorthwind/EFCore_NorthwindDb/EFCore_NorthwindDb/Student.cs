@@ -10,9 +10,9 @@ namespace EFCore_NorthwindDb
     public class Student
     {
         [Key]
-        public int studentId { get; set; }
+        public int StudentId { get; set; }
         [Required]
-        public string fullName { get; set; }
+        public string FullName { get; set; }
 
         public int Age { get; set; }
     }

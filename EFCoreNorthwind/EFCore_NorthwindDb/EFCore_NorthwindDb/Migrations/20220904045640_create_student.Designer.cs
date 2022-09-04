@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EFCore_NorthwindDb.Migrations
 {
     [DbContext(typeof(NorthwindContext))]
-    [Migration("20220904035405_Init_migration")]
-    partial class Init_migration
+    [Migration("20220904045640_create_student")]
+    partial class create_student
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -957,6 +957,26 @@ namespace EFCore_NorthwindDb.Migrations
                     b.HasKey("ShipperId");
 
                     b.ToTable("Shippers");
+                });
+
+            modelBuilder.Entity("EFCore_NorthwindDb.Student", b =>
+                {
+                    b.Property<int>("StudentId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("StudentId"), 1L, 1);
+
+                    b.Property<int>("Age")
+                        .HasColumnType("int");
+
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("StudentId");
+
+                    b.ToTable("Students");
                 });
 
             modelBuilder.Entity("EFCore_NorthwindDb.SummaryOfSalesByQuarter", b =>

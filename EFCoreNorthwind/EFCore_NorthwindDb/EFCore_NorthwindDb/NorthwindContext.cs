@@ -44,6 +44,7 @@ namespace EFCore_NorthwindDb
         public virtual DbSet<SummaryOfSalesByYear> SummaryOfSalesByYears { get; set; } = null!;
         public virtual DbSet<Supplier> Suppliers { get; set; } = null!;
         public virtual DbSet<Territory> Territories { get; set; } = null!;
+        public virtual DbSet<Student> Students { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

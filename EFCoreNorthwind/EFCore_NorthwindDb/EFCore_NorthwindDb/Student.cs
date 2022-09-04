@@ -13,6 +13,7 @@ namespace EFCore_NorthwindDb
         public int studentId { get; set; }
         [Required]
         public string fullName { get; set; }
+
         public int Age { get; set; }
     }
 }

@@ -2230,11 +2230,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Pictures\\Camera Roll\\.NET-Bootcamp-NET-FUNDAMENTAL\\EFCoreNorthwind\\EFCore_NorthwindApp\\EFCore_NorthwindApp\\EFCore_NorthwindApp.csproj",
+      "projectUniqueName": "D:\\.NET Bootcamp\\C#\\EFCoreNorthwind\\EFCore_NorthwindApp\\EFCore_NorthwindApp\\EFCore_NorthwindApp.csproj",
       "projectName": "EFCore_NorthwindApp",
-      "projectPath": "C:\\Users\\User\\Pictures\\Camera Roll\\.NET-Bootcamp-NET-FUNDAMENTAL\\EFCoreNorthwind\\EFCore_NorthwindApp\\EFCore_NorthwindApp\\EFCore_NorthwindApp.csproj",
+      "projectPath": "D:\\.NET Bootcamp\\C#\\EFCoreNorthwind\\EFCore_NorthwindApp\\EFCore_NorthwindApp\\EFCore_NorthwindApp.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Pictures\\Camera Roll\\.NET-Bootcamp-NET-FUNDAMENTAL\\EFCoreNorthwind\\EFCore_NorthwindApp\\EFCore_NorthwindApp\\obj\\",
+      "outputPath": "D:\\.NET Bootcamp\\C#\\EFCoreNorthwind\\EFCore_NorthwindApp\\EFCore_NorthwindApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2251,8 +2251,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\User\\Pictures\\Camera Roll\\.NET-Bootcamp-NET-FUNDAMENTAL\\EFCoreNorthwind\\EFCore_NorthwindDb\\EFCore_NorthwindDb\\EFCore_NorthwindDb.csproj": {
-              "projectPath": "C:\\Users\\User\\Pictures\\Camera Roll\\.NET-Bootcamp-NET-FUNDAMENTAL\\EFCoreNorthwind\\EFCore_NorthwindDb\\EFCore_NorthwindDb\\EFCore_NorthwindDb.csproj"
+            "D:\\.NET Bootcamp\\C#\\EFCoreNorthwind\\EFCore_NorthwindDb\\EFCore_NorthwindDb\\EFCore_NorthwindDb.csproj": {
+              "projectPath": "D:\\.NET Bootcamp\\C#\\EFCoreNorthwind\\EFCore_NorthwindDb\\EFCore_NorthwindDb\\EFCore_NorthwindDb.csproj"
             }
           }
         }

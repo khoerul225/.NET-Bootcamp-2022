@@ -12,3 +12,17 @@ C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\EFCoreNorthwind
 C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\EFCoreNorthwind\EFCore_NorthwindDb\EFCore_NorthwindDb\obj\Debug\net6.0\EFCore_NorthwindDb.pdb
 C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\EFCoreNorthwind\EFCore_NorthwindDb\EFCore_NorthwindDb\obj\Debug\net6.0\EFCore_NorthwindDb.genruntimeconfig.cache
 C:\Users\User\Pictures\Camera Roll\.NET-Bootcamp-NET-FUNDAMENTAL\EFCoreNorthwind\EFCore_NorthwindDb\EFCore_NorthwindDb\obj\Debug\net6.0\ref\EFCore_NorthwindDb.dll
+D:\.NET Bootcamp\C#\EFCoreNorthwind\EFCore_NorthwindDb\EFCore_NorthwindDb\bin\Debug\net6.0\EFCore_NorthwindDb.deps.json
+D:\.NET Bootcamp\C#\EFCoreNorthwind\EFCore_NorthwindDb\EFCore_NorthwindDb\bin\Debug\net6.0\EFCore_NorthwindDb.runtimeconfig.json
+D:\.NET Bootcamp\C#\EFCoreNorthwind\EFCore_NorthwindDb\EFCore_NorthwindDb\bin\Debug\net6.0\EFCore_NorthwindDb.dll
+D:\.NET Bootcamp\C#\EFCoreNorthwind\EFCore_NorthwindDb\EFCore_NorthwindDb\bin\Debug\net6.0\EFCore_NorthwindDb.pdb
+D:\.NET Bootcamp\C#\EFCoreNorthwind\EFCore_NorthwindDb\EFCore_NorthwindDb\obj\Debug\net6.0\EFCore_NorthwindDb.csproj.AssemblyReference.cache
+D:\.NET Bootcamp\C#\EFCoreNorthwind\EFCore_NorthwindDb\EFCore_NorthwindDb\obj\Debug\net6.0\EFCore_NorthwindDb.GeneratedMSBuildEditorConfig.editorconfig
+D:\.NET Bootcamp\C#\EFCoreNorthwind\EFCore_NorthwindDb\EFCore_NorthwindDb\obj\Debug\net6.0\EFCore_NorthwindDb.AssemblyInfoInputs.cache
+D:\.NET Bootcamp\C#\EFCoreNorthwind\EFCore_NorthwindDb\EFCore_NorthwindDb\obj\Debug\net6.0\EFCore_NorthwindDb.AssemblyInfo.cs
+D:\.NET Bootcamp\C#\EFCoreNorthwind\EFCore_NorthwindDb\EFCore_NorthwindDb\obj\Debug\net6.0\EFCore_NorthwindDb.csproj.CoreCompileInputs.cache
+D:\.NET Bootcamp\C#\EFCoreNorthwind\EFCore_NorthwindDb\EFCore_NorthwindDb\obj\Debug\net6.0\EFCore_NorthwindDb.dll
+D:\.NET Bootcamp\C#\EFCoreNorthwind\EFCore_NorthwindDb\EFCore_NorthwindDb\obj\Debug\net6.0\refint\EFCore_NorthwindDb.dll
+D:\.NET Bootcamp\C#\EFCoreNorthwind\EFCore_NorthwindDb\EFCore_NorthwindDb\obj\Debug\net6.0\EFCore_NorthwindDb.pdb
+D:\.NET Bootcamp\C#\EFCoreNorthwind\EFCore_NorthwindDb\EFCore_NorthwindDb\obj\Debug\net6.0\EFCore_NorthwindDb.genruntimeconfig.cache
+D:\.NET Bootcamp\C#\EFCoreNorthwind\EFCore_NorthwindDb\EFCore_NorthwindDb\obj\Debug\net6.0\ref\EFCore_NorthwindDb.dll

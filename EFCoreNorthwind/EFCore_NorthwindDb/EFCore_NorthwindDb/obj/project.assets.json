@@ -2052,11 +2052,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Pictures\\Camera Roll\\.NET-Bootcamp-NET-FUNDAMENTAL\\EFCoreNorthwind\\EFCore_NorthwindDb\\EFCore_NorthwindDb\\EFCore_NorthwindDb.csproj",
+      "projectUniqueName": "D:\\.NET Bootcamp\\C#\\EFCoreNorthwind\\EFCore_NorthwindDb\\EFCore_NorthwindDb\\EFCore_NorthwindDb.csproj",
       "projectName": "EFCore_NorthwindDb",
-      "projectPath": "C:\\Users\\User\\Pictures\\Camera Roll\\.NET-Bootcamp-NET-FUNDAMENTAL\\EFCoreNorthwind\\EFCore_NorthwindDb\\EFCore_NorthwindDb\\EFCore_NorthwindDb.csproj",
+      "projectPath": "D:\\.NET Bootcamp\\C#\\EFCoreNorthwind\\EFCore_NorthwindDb\\EFCore_NorthwindDb\\EFCore_NorthwindDb.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Pictures\\Camera Roll\\.NET-Bootcamp-NET-FUNDAMENTAL\\EFCoreNorthwind\\EFCore_NorthwindDb\\EFCore_NorthwindDb\\obj\\",
+      "outputPath": "D:\\.NET Bootcamp\\C#\\EFCoreNorthwind\\EFCore_NorthwindDb\\EFCore_NorthwindDb\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

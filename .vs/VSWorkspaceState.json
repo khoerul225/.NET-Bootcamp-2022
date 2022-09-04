@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Fundamental",
+    "\\Fundamental\\DAY01",
+    "\\Fundamental\\DAY01\\DAY01"
   ],
-  "SelectedNode": "\\D:\\.NET Bootcamp\\C#",
+  "SelectedNode": "\\Fundamental\\DAY01\\DAY01\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

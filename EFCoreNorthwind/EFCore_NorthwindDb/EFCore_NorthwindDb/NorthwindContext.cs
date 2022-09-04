@@ -669,6 +669,8 @@ namespace EFCore_NorthwindDb
                 entity.Property(e => e.Phone).HasMaxLength(24);
             });
 
+
+
             modelBuilder.Entity<SummaryOfSalesByQuarter>(entity =>
             {
                 entity.HasNoKey();

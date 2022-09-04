@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Pictures\\Camera Roll\\.NET-Bootcamp-NET-FUNDAMENTAL\\Fundamental\\QUIZ01\\QUIZ01\\QUIZ01.csproj",
+      "projectUniqueName": "D:\\.NET Bootcamp\\C#\\Fundamental\\QUIZ01\\QUIZ01\\QUIZ01.csproj",
       "projectName": "QUIZ01",
-      "projectPath": "C:\\Users\\User\\Pictures\\Camera Roll\\.NET-Bootcamp-NET-FUNDAMENTAL\\Fundamental\\QUIZ01\\QUIZ01\\QUIZ01.csproj",
+      "projectPath": "D:\\.NET Bootcamp\\C#\\Fundamental\\QUIZ01\\QUIZ01\\QUIZ01.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Pictures\\Camera Roll\\.NET-Bootcamp-NET-FUNDAMENTAL\\Fundamental\\QUIZ01\\QUIZ01\\obj\\",
+      "outputPath": "D:\\.NET Bootcamp\\C#\\Fundamental\\QUIZ01\\QUIZ01\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

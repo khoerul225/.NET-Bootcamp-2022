@@ -161,11 +161,11 @@ namespace FinalTestKm
             return result;
         }
         //Use Function
-        public static int[,] NumberEightMat1(int baris, int kolom)
+        public static int[,] NumberEightMat1(int baris, int column)
         {
-            int[,] matrik = new int[baris, kolom];
+            int[,] matrik = new int[baris, column];
             int count = 10;
-            int n = kolom - 1;
+            int n = column - 1;
             int x;
 
             for (int i = 0; i < matrik.GetLength(0); i++)
@@ -198,11 +198,11 @@ namespace FinalTestKm
             return matrik;
         }
         //Use Methode
-        public static void NumberEightMat1M(int baris, int kolom)
+        public static void NumberEightMat1M(int baris, int column)
         {
-            int[,] matrik = new int[baris, kolom];
+            int[,] matrik = new int[baris, column];
             int count = 10;
-            int n = kolom - 1;
+            int n = column - 1;
             int x;
 
             for (int i = 0; i < matrik.GetLength(0); i++)
@@ -245,16 +245,16 @@ namespace FinalTestKm
         }
 
         //Menggunakan Function
-        public static int[,] NumberEightMat2(int baris, int kolom)
+        public static int[,] NumberEightMat2(int baris, int column)
         {
-            int[,] matrik = new int[baris, kolom];
+            int[,] matrik = new int[baris, column];
             int count1 = 1;
             int count2 = 2;
             int count3 = 3;
             int count4 = 4;
             int count5 = 5;
 
-            int n = kolom - 1;
+            int n = column - 1;
 
             for (int i = 0; i < matrik.GetLength(0); i++)
             {
@@ -286,15 +286,15 @@ namespace FinalTestKm
         }
 
         //Menggunakan Methode
-        public static void NumberEightMat2M(int baris, int kolom)
+        public static void NumberEightMat2M(int baris, int column)
         {
-            int[,] matrik = new int[baris, kolom];
+            int[,] matrik = new int[baris, column];
             int count1 = 1;
             int count2 = 2;
             int count3 = 3;
             int count4 = 4;
             int count5 = 5;
-            int n = kolom - 1;
+            int n = column - 1;
 
             for (int i = 0; i < matrik.GetLength(0); i++)
             {
@@ -338,9 +338,9 @@ namespace FinalTestKm
         }
 
         //Use Methode
-        public static void NumberEightMat3M(int baris, int kolom)
+        public static void NumberEightMat3M(int baris, int column)
         {
-            int[,] matrik = new int[baris, kolom];
+            int[,] matrik = new int[baris, column];
             int count1 = 1;
             int count2 = 1;
             int count3 = 1;
@@ -348,7 +348,7 @@ namespace FinalTestKm
             int count5 = 1;
             int count6 = 1;
             int count7 = 1;
-            int n = kolom - 1;
+            int n = column - 1;
 
             for (int i = 0; i < matrik.GetLength(0); i++)
             {
@@ -399,9 +399,9 @@ namespace FinalTestKm
           }
 
         //Use Funtion
-        public static int [,] NumberEightMat3(int baris, int kolom)
+        public static int [,] NumberEightMat3(int baris, int column)
         {
-            int[,] matrik = new int[baris, kolom];
+            int[,] matrik = new int[baris, column];
             int count1 = 1;
             int count2 = 1;
             int count3 = 1;
@@ -409,7 +409,7 @@ namespace FinalTestKm
             int count5 = 1;
             int count6 = 1;
             int count7 = 1;
-            int n = kolom - 1;
+            int n = column - 1;
 
             for (int i = 0; i < matrik.GetLength(0); i++)
             {
@@ -449,15 +449,16 @@ namespace FinalTestKm
 
         }
         //Use Methode
-        public static void NumberEightMat4M(int baris, int kolom)
+        public static void NumberEightMat4M(int baris, int column)
         {
-            int[,] matrik = new int[baris, kolom];
-            int count1 = 1;
-            int count2 = 2;
-            int count4 = 4;
-            int count5 = 5;
+            int[,] matrik = new int[baris, column];
+            int count1  = 1;
+            int count2  = 2;
+            int count2r = 4;
+            int count3  = 4;
+            int count5  = 5;
             int count5r = 8;
-            int n = kolom - 1;
+            int n = column - 1;
 
             for (int i = 0; i < matrik.GetLength(0); i++)
             {
@@ -475,40 +476,67 @@ namespace FinalTestKm
                             matrik[i, j] = count1++;
                             Console.Write($"\t\t\t{matrik[i, j]}\t");
                         }
-                        if (j == 4)
+                        else if (j == 4)
                         {
                             matrik[i, j] = count1++;
                             Console.Write($"{matrik[i, j]}\t");
                         }
-                        if (j == 5)
+                        else if (j == 5)
                         {
                             matrik[i, j] = count2++;
                             Console.Write($"{matrik[i, j]}\t");
                         }
-                    }
+                    }                 
                     else if (i == 2)
                     {
-                        if (j == 2 && j <= 4)
+                        if (j == 1)
+                        {
+                            Console.Write($"\t\t");
+                            matrik[i, j] = count2++;
+                            Console.Write($"{matrik[i, j]}\t");
+                        }
+                        if (j == 2)
                         {
                             matrik[i, j] = count2++;
                             Console.Write($"{matrik[i, j]}\t");
                         }
-                        if (j == 5)
+                        if (j == 3)
                         {
-                            matrik[i, j] = 4;
+                            matrik[i, j] = count2++;
+                            Console.Write($"{matrik[i, j]}\t");
+                        }
+                        if (j ==5)
+                        {
+                            matrik[i, j] = count2r--;
                             Console.Write($"{matrik[i, j]}\t");
                         }
                         if (j == 6)
                         {
-                            matrik[i, j] = 3;
+                            matrik[i, j] = count2r--;
                             Console.Write($"{matrik[i, j]}\t");
                         }
                     }
                     else if (i == 3)
                     {
-                        if (j >= 1 && j <= 4)
+                        if (j == 1)
                         {
-                            matrik[i, j] = count4++;
+                            Console.Write($"\t");
+                            matrik[i, j] = count3++;
+                            Console.Write($"{matrik[i, j]}\t");
+                        }
+                        if (j == 2)
+                        {
+                            matrik[i, j] = count3++;
+                            Console.Write($"{matrik[i, j]}\t");
+                        }
+                        if (j == 3)
+                        {
+                            matrik[i, j] = count3++;
+                            Console.Write($"{matrik[i, j]}\t");
+                        }
+                        if (j == 4)
+                        {
+                            matrik[i, j] = count3++;
                             Console.Write($"{matrik[i, j]}\t");
                         }
                         else if (j == 5)
@@ -551,15 +579,15 @@ namespace FinalTestKm
         }
 
         //Use Funtion
-        public static int[,] NumberEightMat4(int baris, int kolom)
+        public static int[,] NumberEightMat4(int baris, int column)
         {
-            int[,] matrik = new int[baris, kolom];
+            int[,] matrik = new int[baris, column];
             int count1 = 1;
             int count2 = 2;
             int count4 = 4;
             int count5 = 5;
             int count5r = 8;
-            int n = kolom - 1;
+            int n = column - 1;
 
             for (int i = 0; i < matrik.GetLength(0); i++)
             {

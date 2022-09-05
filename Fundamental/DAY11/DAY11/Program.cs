@@ -48,9 +48,9 @@ Console.WriteLine(View);
 Solution.DisplayMatrix(View);
 */
 
-/*int baris = 5;
-int kolom =5;
-FinalTestKm.Solution.NumberEightMat1M(baris,kolom);
+/*int line = 5;
+int column =5;
+FinalTestKm.Solution.NumberEightMat1M(line,column);
 */
 
 //8
@@ -60,30 +60,31 @@ Solution.DisplayMatrix(View);
 */
 
 ///Matrik2 Methode
-/*int baris = 5;
-int kolom = 5;
-FinalTestKm.Solution.NumberEightMat2M(baris, kolom);
+/*int line = 5;
+int column = 5;
+FinalTestKm.Solution.NumberEightMat2M(line, column);
 */
 
 //8
-///Matrik2 Funtion
+///Matrik3 Funtion
 /*var View = Solution.NumberEightMat3(7, 4);
 Solution.DisplayMatrix(View);
 */
 
-///Matrik2 Methode
-/*int baris = 7;
-int kolom = 4;
-FinalTestKm.Solution.NumberEightMat3M(baris, kolom);
+///Matrik3 Methode
+/*int line = 7;
+int column = 4;
+FinalTestKm.Solution.NumberEightMat3M(line, column);
 */
+
 //8
-///Matrik2 Funtion
+///Matrik4 Funtion
 var View = Solution.NumberEightMat4(5, 9);
 Solution.DisplayMatrix(View);
+Console.WriteLine();
 
-
-///Matrik2 Methode
-int baris = 5;
-int kolom = 8;
-FinalTestKm.Solution.NumberEightMat4M(baris, kolom);
+///Matrik4 Methode
+int line = 5;
+int column = 9;
+FinalTestKm.Solution.NumberEightMat4M(line, column);
 

@@ -1,0 +1,15 @@
+D:\.NET Bootcamp\C#\Fundamental\DAY11\DAY11\bin\Debug\net6.0\DAY11.exe
+D:\.NET Bootcamp\C#\Fundamental\DAY11\DAY11\bin\Debug\net6.0\DAY11.deps.json
+D:\.NET Bootcamp\C#\Fundamental\DAY11\DAY11\bin\Debug\net6.0\DAY11.runtimeconfig.json
+D:\.NET Bootcamp\C#\Fundamental\DAY11\DAY11\bin\Debug\net6.0\DAY11.dll
+D:\.NET Bootcamp\C#\Fundamental\DAY11\DAY11\bin\Debug\net6.0\DAY11.pdb
+D:\.NET Bootcamp\C#\Fundamental\DAY11\DAY11\obj\Debug\net6.0\DAY11.csproj.AssemblyReference.cache
+D:\.NET Bootcamp\C#\Fundamental\DAY11\DAY11\obj\Debug\net6.0\DAY11.GeneratedMSBuildEditorConfig.editorconfig
+D:\.NET Bootcamp\C#\Fundamental\DAY11\DAY11\obj\Debug\net6.0\DAY11.AssemblyInfoInputs.cache
+D:\.NET Bootcamp\C#\Fundamental\DAY11\DAY11\obj\Debug\net6.0\DAY11.AssemblyInfo.cs
+D:\.NET Bootcamp\C#\Fundamental\DAY11\DAY11\obj\Debug\net6.0\DAY11.csproj.CoreCompileInputs.cache
+D:\.NET Bootcamp\C#\Fundamental\DAY11\DAY11\obj\Debug\net6.0\DAY11.dll
+D:\.NET Bootcamp\C#\Fundamental\DAY11\DAY11\obj\Debug\net6.0\refint\DAY11.dll
+D:\.NET Bootcamp\C#\Fundamental\DAY11\DAY11\obj\Debug\net6.0\DAY11.pdb
+D:\.NET Bootcamp\C#\Fundamental\DAY11\DAY11\obj\Debug\net6.0\DAY11.genruntimeconfig.cache
+D:\.NET Bootcamp\C#\Fundamental\DAY11\DAY11\obj\Debug\net6.0\ref\DAY11.dll

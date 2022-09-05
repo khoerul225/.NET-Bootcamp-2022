@@ -91,7 +91,7 @@ namespace FinalTestKm
         public static int[] Fibonacci(int number)
         {
             int[] a = new int[number];
-            a[0] = 0;
+            a[0] = 1;
             a[1] = 1;
             for (int i = 2; i < number; i++)
             {
@@ -104,7 +104,8 @@ namespace FinalTestKm
             var b = Fibonacci(number);
             foreach (var elements in b)
             {
-                Console.WriteLine(elements);
+                Console.Write(elements);
+                
             }
         }
 
@@ -159,23 +160,477 @@ namespace FinalTestKm
             }
             return result;
         }
-        public static int[,] NumberEight(int b, int k)
+        //Use Function
+        public static int[,] NumberEightMat1(int baris, int kolom)
         {
-            int[,] matrix = new int[b, k];
-            int counter = b;
+            int[,] matrik = new int[baris, kolom];
             int count = 10;
-            for (int i = 0; i < matrix.GetLength(0); i++)
+            int n = kolom - 1;
+            int x;
+
+            for (int i = 0; i < matrik.GetLength(0); i++)
             {
-                for (int j = 0; j < matrix.GetLength(1); j++)
+                count = 10;
+                for (int j = 0; j < matrik.GetLength(1); j++)
                 {
-                    if (i >= j)
+                    if (i == 0)
                     {
-                        matrix[i, 0] = count;
+                        matrik[i, j] = count--;
+                    }
+                    else if (i == 1 && j < n)
+                    {
+                            matrik[i, j] = count--;
+                    }
+                    else if (i == 2 && j < n - 1)
+                    {
+                            matrik[i, j] = count--;
+                    }
+                    else if (i == 3 && j < n - 2)
+                    {
+                            matrik[i, j] = count--;
+                    }
+                    else if (i == 4 && j == 0)
+                    {
+                            matrik[i, j] = 10;
                     }
                 }
             }
-            return matrix;
+            return matrik;
         }
+        //Use Methode
+        public static void NumberEightMat1M(int baris, int kolom)
+        {
+            int[,] matrik = new int[baris, kolom];
+            int count = 10;
+            int n = kolom - 1;
+            int x;
+
+            for (int i = 0; i < matrik.GetLength(0); i++)
+            {
+                count = 10;
+                for (int j = 0; j < matrik.GetLength(1); j++)
+                {
+                    if (i == 0)
+                    {
+                        matrik[i, j] = count--;
+                        Console.Write($"{matrik[i, j]}\t");
+                    }
+                    else if (i == 1 && j < n)
+                    {
+                        matrik[i, j] = count--;
+                        Console.Write($"{matrik[i, j]}\t");
+                    }
+                    else if (i == 2 && j < n - 1)
+                    {
+                        matrik[i, j] = count--;
+                        Console.Write($"{matrik[i, j]}\t");
+                    }
+                    else if (i == 3 && j < n - 2)
+                    {
+                        matrik[i, j] = count--;
+                        Console.Write($"{matrik[i, j]}\t");
+                    }
+                    else if (i == 4 && j == 0)
+                    {
+                        matrik[i, j] = 10;
+                        Console.Write($"{matrik[i, j]}\t");
+                    }
+                    else
+                    {
+                        Console.Write($"\t");
+                    }
+                }
+                Console.WriteLine();
+            }
+        }
+
+        //Menggunakan Function
+        public static int[,] NumberEightMat2(int baris, int kolom)
+        {
+            int[,] matrik = new int[baris, kolom];
+            int count1 = 1;
+            int count2 = 2;
+            int count3 = 3;
+            int count4 = 4;
+            int count5 = 5;
+
+            int n = kolom - 1;
+
+            for (int i = 0; i < matrik.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrik.GetLength(1); j++)
+                {
+                    if (i == 0 && j < 1)
+                    {
+                        matrik[i, j] = count1++;
+                    }
+                    else if (i == 1 && j < 2)
+                    {
+                        matrik[i, j] = count2++;
+                    }
+                    else if (i == 2 && j < 3)
+                    {
+                        matrik[i, j] = count3++;
+                    }
+                    else if (i == 3 && j < 4)
+                    {
+                        matrik[i, j] = count4++;
+                    }
+                    else if (i == 4 && j < 5)
+                    {
+                        matrik[i, j] = count5++; 
+                    }
+                }
+            }
+            return matrik;
+        }
+
+        //Menggunakan Methode
+        public static void NumberEightMat2M(int baris, int kolom)
+        {
+            int[,] matrik = new int[baris, kolom];
+            int count1 = 1;
+            int count2 = 2;
+            int count3 = 3;
+            int count4 = 4;
+            int count5 = 5;
+            int n = kolom - 1;
+
+            for (int i = 0; i < matrik.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrik.GetLength(1); j++)
+                {
+                    if (i == 0 && j <1)
+                    {
+                        matrik[i, j] = count1++;
+                        Console.Write($"{matrik[i, j]}\t");
+                    }
+                    else if (i == 1 && j < 2)
+                    {
+                            matrik[i, j] = count2++;
+                        Console.Write($"{matrik[i, j]}\t");
+                    }
+                    else if (i == 2 && j < 3)
+                    {
+                            matrik[i, j] = count3++;
+                            Console.Write($"{matrik[i, j]}\t");
+                    }
+                    else if (i == 3 && j < 4)
+                    {
+                            matrik[i, j] = count4++;
+                            Console.Write($"{matrik[i, j]}\t");
+                    }
+                    else if (i == 4 && j < 5)
+                    {
+                        matrik[i, j] = count5++;
+                        Console.Write($"{matrik[i, j]}\t");
+                    }
+                    else 
+                    {
+                        Console.Write($"\t");
+                    }
+
+
+                }
+                Console.WriteLine();
+            }
+ 
+        }
+
+        //Use Methode
+        public static void NumberEightMat3M(int baris, int kolom)
+        {
+            int[,] matrik = new int[baris, kolom];
+            int count1 = 1;
+            int count2 = 1;
+            int count3 = 1;
+            int count4 = 1;
+            int count5 = 1;
+            int count6 = 1;
+            int count7 = 1;
+            int n = kolom - 1;
+
+            for (int i = 0; i < matrik.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrik.GetLength(1); j++)
+                {
+                    if (i == 0 && j < 1)
+                    {
+                        matrik[i, j] = count1++;
+                        Console.Write($"{matrik[i, j]}\t");
+                    }
+                    else if (i == 1 && j < 2)
+                    {
+                        matrik[i, j] = count2++;
+                        Console.Write($"{matrik[i, j]}\t");
+                    }
+                    else if (i == 2 && j < 3)
+                    {
+                        matrik[i, j] = count3++;
+                        Console.Write($"{matrik[i, j]}\t");
+                    }
+                    else if (i == 3 && j < 4)
+                    {
+                        matrik[i, j] = count4++;
+                        Console.Write($"{matrik[i, j]}\t");
+                    }
+                    else if (i == 4 && j < 3)
+                    {
+                        matrik[i, j] = count5++;
+                        Console.Write($"{matrik[i, j]}\t");
+                    }
+                    else if (i == 5 && j < 2)
+                    {
+                        matrik[i, j] = count6++;
+                        Console.Write($"{matrik[i, j]}\t");
+                    }
+                    else if (i == 6 && j < 1)
+                    {
+                        matrik[i, j] = count7++;
+                        Console.Write($"{matrik[i, j]}\t");
+                    }
+                    else
+                    {
+                        Console.Write($"\t");
+                    }
+                }
+                Console.WriteLine();
+            }
+          }
+
+        //Use Funtion
+        public static int [,] NumberEightMat3(int baris, int kolom)
+        {
+            int[,] matrik = new int[baris, kolom];
+            int count1 = 1;
+            int count2 = 1;
+            int count3 = 1;
+            int count4 = 1;
+            int count5 = 1;
+            int count6 = 1;
+            int count7 = 1;
+            int n = kolom - 1;
+
+            for (int i = 0; i < matrik.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrik.GetLength(1); j++)
+                {
+                    if (i == 0 && j < 1)
+                    {
+                        matrik[i, j] = count1++;
+                    }
+                    else if (i == 1 && j < 2)
+                    {
+                        matrik[i, j] = count2++;
+                    }
+                    else if (i == 2 && j < 3)
+                    {
+                        matrik[i, j] = count3++;
+                    }
+                    else if (i == 3 && j < 4)
+                    {
+                        matrik[i, j] = count4++;
+                    }
+                    else if (i == 4 && j < 3)
+                    {
+                        matrik[i, j] = count5++;
+                    }
+                    else if (i == 5 && j < 2)
+                    {
+                        matrik[i, j] = count6++;
+                    }
+                    else if (i == 6 && j < 1)
+                    {
+                        matrik[i, j] = count7++;
+                    }
+                }
+            }
+            return matrik;
+
+        }
+        //Use Methode
+        public static void NumberEightMat4M(int baris, int kolom)
+        {
+            int[,] matrik = new int[baris, kolom];
+            int count1 = 1;
+            int count2 = 2;
+            int count4 = 4;
+            int count5 = 5;
+            int count5r = 8;
+            int n = kolom - 1;
+
+            for (int i = 0; i < matrik.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrik.GetLength(1); j++)
+                {
+                    if (i == 0 && j == 4)
+                    {
+                        matrik[i, j] = count1++;
+                        Console.Write($"\t\t\t\t{matrik[i, j]}");
+                    }
+                    else if (i == 1)
+                    {
+                        if (j == 3)
+                        {
+                            matrik[i, j] = count1++;
+                            Console.Write($"\t\t\t{matrik[i, j]}\t");
+                        }
+                        if (j == 4)
+                        {
+                            matrik[i, j] = count1++;
+                            Console.Write($"{matrik[i, j]}\t");
+                        }
+                        if (j == 5)
+                        {
+                            matrik[i, j] = count2++;
+                            Console.Write($"{matrik[i, j]}\t");
+                        }
+                    }
+                    else if (i == 2)
+                    {
+                        if (j == 2 && j <= 4)
+                        {
+                            matrik[i, j] = count2++;
+                            Console.Write($"{matrik[i, j]}\t");
+                        }
+                        if (j == 5)
+                        {
+                            matrik[i, j] = 4;
+                            Console.Write($"{matrik[i, j]}\t");
+                        }
+                        if (j == 6)
+                        {
+                            matrik[i, j] = 3;
+                            Console.Write($"{matrik[i, j]}\t");
+                        }
+                    }
+                    else if (i == 3)
+                    {
+                        if (j >= 1 && j <= 4)
+                        {
+                            matrik[i, j] = count4++;
+                            Console.Write($"{matrik[i, j]}\t");
+                        }
+                        else if (j == 5)
+                        {
+                            matrik[i, j] = 6;
+                            Console.Write($"{matrik[i, j]}\t");
+                        }
+                        else if (j == 6)
+                        {
+                            matrik[i, j] = 5;
+                            Console.Write($"{matrik[i, j]}\t");
+                        }
+                        else if (j == 7)
+                        {
+                            matrik[i, j] = 4;
+                            Console.Write($"{matrik[i, j]}\t");
+
+                        }
+                    }
+                    else if (i == 4)
+                    {
+                        if (j >= 0 && j <= 4)
+                        {
+                            matrik[i, j] = count5++;
+                            Console.Write($"{matrik[i, j]}\t");
+                        }
+                        if (j >= 5)
+                        {
+                            matrik[i, j] = count5r--;
+                            Console.Write($"{matrik[i, j]}\t");
+                        }
+                    }
+                    else if (i == 4)
+                    {
+                            Console.Write($"\t");
+                    }
+                }
+                Console.WriteLine();
+            }
+        }
+
+        //Use Funtion
+        public static int[,] NumberEightMat4(int baris, int kolom)
+        {
+            int[,] matrik = new int[baris, kolom];
+            int count1 = 1;
+            int count2 = 2;
+            int count4 = 4;
+            int count5 = 5;
+            int count5r = 8;
+            int n = kolom - 1;
+
+            for (int i = 0; i < matrik.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrik.GetLength(1); j++)
+                {
+                    if (i == 0 && j == 4)
+                    {
+                        matrik[i, j] = count1++;
+                    }
+                    else if (i == 1)
+                    {
+                        if (j >= 3 && j <= 4)
+                        {
+                            matrik[i, j] = count1++;
+                        }
+                        if (j == 5)
+                        {
+                            matrik[i, j] = count2++;
+                        }
+                    }
+                    else if (i == 2)
+                    {
+                        if (j >= 2 && j <= 4)
+                        {
+                            matrik[i, j] = count2++;
+                        }
+                        if (j == 5)
+                        {
+                            matrik[i, j] = 4;
+                        }
+                        if (j == 6)
+                        {
+                            matrik[i, j] = 3;
+                        }
+                    }
+                    else if (i == 3)
+                    {
+                        if (j >= 1 && j <= 4)
+                        {
+                            matrik[i, j] = count4++;
+                        }
+                        else if (j == 5)
+                        {
+                            matrik[i, j] = 6;
+                        }
+                        else if (j == 6)
+                        {
+                            matrik[i, j] = 5;
+                        }
+                        else if (j == 7)
+                        {
+                            matrik[i, j] = 4;
+                        }
+                    }
+                    else if (i == 4)
+                    {
+                        if (j >= 0 && j <= 4)
+                        {
+                            matrik[i, j] = count5++;
+                        }
+                        if (j >= 5)
+                        {
+                            matrik[i, j] = count5r--;
+                        }
+                    }
+                }
+            }
+            return matrik;
+
+        }
+
         public static void DisplayMatrix(int[,] matrix)
         {
             for (int i = 0; i < matrix.GetLength(0); i++) // looping rows

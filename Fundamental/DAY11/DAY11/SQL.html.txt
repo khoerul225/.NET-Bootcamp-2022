@@ -1,0 +1,29 @@
+a. Select p.policy_bumber, p.polivy_submit_date, c.client_number, c.birth_date 
+	from T_Policy p
+		join T_Client c
+		on p.client_number = c.client_number
+	where p.POLICY_SUBMIT_DATE  '15-01-18' and c.birth_date LIKE '%9_'
+	group by p.policy_bumber, p.polivy_submit_date, c.client_number, c.birth_date
+	order by p.policy_number
+
+b. Select p.policy_number, a.agent_code, p.policy_status
+	from T_Policy p
+		join T_Agent a
+		on p.agent_code = a.agent_code
+	where p.policy_status = 'Inforce' and a.Agent_Office = 'Jakarta'
+	group by p.policy_number, a.agent_code, p.policy_status
+	order by p.policy_number
+
+c. insert into T_Agen (Basic_Commision)
+	values(
+		select ((commision  premium)  100) as Commision
+		from T_Policy
+		)
+
+d. insert into T_Policy(POLICY_DUE_DATE)
+	values (DATEADD(dd, 30, POLICY_SUBMIT_DATE))
+	
+e. Select 
+	from T_Policy
+	where (premium  10)  1000000
+	order by premiun desc

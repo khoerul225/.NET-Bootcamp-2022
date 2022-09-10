@@ -1,6 +1,11 @@
 ﻿using Northwind.Web.Models;
 using System;
 using System.Collections.Generic;
+/// <summary>
+/// 10-9-2022 Video 4
+/// Penggunaan Defedenci Injection
+/// Desain Repository
+/// </summary>
 
 namespace Northwind.Web.Repository
 {

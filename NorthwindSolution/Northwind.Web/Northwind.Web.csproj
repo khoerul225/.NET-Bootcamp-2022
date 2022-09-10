@@ -6,8 +6,4 @@
     <RootNamespace>Northwind.Web</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Repository\" />
-  </ItemGroup>
-
 </Project>

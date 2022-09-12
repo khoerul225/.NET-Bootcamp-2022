@@ -26,7 +26,8 @@ namespace Northwind.Web
         {
             services.AddControllersWithViews();
             // call Interface & Implementasi
-            services.AddScoped<IEmployee, EmployeeRepository>();
+            services.AddScoped<IEmployee, Repository.EmployeeRepository>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

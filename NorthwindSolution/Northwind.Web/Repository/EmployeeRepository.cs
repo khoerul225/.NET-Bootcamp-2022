@@ -1,4 +1,5 @@
-﻿using Northwind.Web.Models;
+﻿using Northwind.Web.Controllers;
+using Northwind.Web.Models;
 using System;
 using System.Collections.Generic;
 /// <summary>
@@ -15,10 +16,11 @@ namespace Northwind.Web.Repository
         {
             var listOfEmployee = new List<Employee>() 
             {
-                new Employee {Id=1001, Name="Bang Taqin", BirthDate =new System.DateTime (1999,07,03) },
-                new Employee {Id=1002, Name="Ka Silvi", BirthDate =new DateTime (2002,04,24) },
-                new Employee {Id=1003, Name="Ka Intan", BirthDate =new DateTime (2002,08,11)},
-                new Employee {Id=1004, Name="Ka Fiki", BirthDate =new DateTime (1998,01,18)}
+                new Employee {Id=1001, Name="Ahsan Murobi", Email="Ahsanmurobi@gmail.com", BirthDate =new System.DateTime (1996,04,24) },
+                new Employee {Id=1002, Name="Khoerul Mutaqin",Email="Khoerulmutaqin@gmail.com", BirthDate =new DateTime (1999,07,03) },
+                new Employee {Id=1003, Name="Silvia Raudha",Email="Silviaraudha@gmail.com", BirthDate =new DateTime (2002,03,24)},
+                new Employee {Id=1004, Name="Apnan Faiz",Email="Apnanfaiz@gmail.com", BirthDate =new DateTime (2003,07,22)},
+                new Employee {Id=1005, Name="Ahmad Abdul Muiz",Email="Ahmadmuiz@gmail.com", BirthDate =new DateTime (2011,07,11)},
 
             };
             return listOfEmployee;

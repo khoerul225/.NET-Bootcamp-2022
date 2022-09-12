@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Northwind.Web.Repository;
 
 namespace Northwind.Web.Controllers
 {
@@ -21,8 +22,10 @@ namespace Northwind.Web.Controllers
         public IActionResult Index()
         {
             var myName = "Bang Taqin";
-            return View("Index",myName);
+            return View("Index", myName);
         }
+
+
 
         public IActionResult Privacy()
         {

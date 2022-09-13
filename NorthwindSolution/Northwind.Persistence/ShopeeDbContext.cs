@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
-using N
+using Northwind.Domain.Enities;
 
 namespace Northwind.Persistence
 {

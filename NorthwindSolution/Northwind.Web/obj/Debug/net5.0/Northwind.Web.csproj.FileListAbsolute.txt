@@ -156,3 +156,8 @@ D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Ca
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Categories\Details.cshtml.g.cs
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Categories\Edit.cshtml.g.cs
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Categories\Index.cshtml.g.cs
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Products\Create.cshtml.g.cs
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Products\Delete.cshtml.g.cs
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Products\Details.cshtml.g.cs
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Products\Edit.cshtml.g.cs
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Products\Index.cshtml.g.cs

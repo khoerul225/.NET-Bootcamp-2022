@@ -1517,20 +1517,6 @@
         "runtime": {
           "bin/placeholder/Northwind.Domain.dll": {}
         }
-      },
-      "Northwind.Persistence/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
-          "Northwind.Domain": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Northwind.Persistence.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Northwind.Persistence.dll": {}
-        }
       }
     }
   },
@@ -5780,18 +5766,13 @@
       "type": "project",
       "path": "../Northwind.Domain/Northwind.Domain.csproj",
       "msbuildProject": "../Northwind.Domain/Northwind.Domain.csproj"
-    },
-    "Northwind.Persistence/1.0.0": {
-      "type": "project",
-      "path": "../Northwind.Persistence/Northwind.Persistence.csproj",
-      "msbuildProject": "../Northwind.Persistence/Northwind.Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Microsoft.EntityFrameworkCore.Design >= 5.0.17",
-      "Northwind.Domain >= 1.0.0",
-      "Northwind.Persistence >= 1.0.0"
+      "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.17",
+      "Northwind.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5800,11 +5781,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\.NET Bootcamp\\NorthwindSolution\\Northwind.Web\\Northwind.Web.csproj",
-      "projectName": "Northwind.Web",
-      "projectPath": "D:\\.NET Bootcamp\\NorthwindSolution\\Northwind.Web\\Northwind.Web.csproj",
+      "projectUniqueName": "D:\\.NET Bootcamp\\NorthwindSolution\\Northwind.Persistence\\Northwind.Persistence.csproj",
+      "projectName": "Northwind.Persistence",
+      "projectPath": "D:\\.NET Bootcamp\\NorthwindSolution\\Northwind.Persistence\\Northwind.Persistence.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\.NET Bootcamp\\NorthwindSolution\\Northwind.Web\\obj\\",
+      "outputPath": "D:\\.NET Bootcamp\\NorthwindSolution\\Northwind.Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5823,9 +5804,6 @@
           "projectReferences": {
             "D:\\.NET Bootcamp\\NorthwindSolution\\Northwind.Domain\\Northwind.Domain.csproj": {
               "projectPath": "D:\\.NET Bootcamp\\NorthwindSolution\\Northwind.Domain\\Northwind.Domain.csproj"
-            },
-            "D:\\.NET Bootcamp\\NorthwindSolution\\Northwind.Persistence\\Northwind.Persistence.csproj": {
-              "projectPath": "D:\\.NET Bootcamp\\NorthwindSolution\\Northwind.Persistence\\Northwind.Persistence.csproj"
             }
           }
         }
@@ -5845,6 +5823,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[5.0.17, )"
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer": {
+            "target": "Package",
+            "version": "[5.0.17, )"
           }
         },
         "imports": [
@@ -5858,9 +5840,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

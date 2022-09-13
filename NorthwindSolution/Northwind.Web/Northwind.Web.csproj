@@ -6,4 +6,16 @@
     <RootNamespace>Northwind.Web</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.17">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Northwind.Domain\Northwind.Domain.csproj" />
+    <ProjectReference Include="..\Northwind.Persistence\Northwind.Persistence.csproj" />
+  </ItemGroup>
+
 </Project>

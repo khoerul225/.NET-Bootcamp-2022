@@ -5,10 +5,13 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Northwind.Web.Repository;
+using Northwind.Domain.Enities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Northwind.Persistence;
+using Microsoft.EntityFrameworkCore;
 
 namespace Northwind.Web
 {
@@ -27,6 +30,13 @@ namespace Northwind.Web
             services.AddControllersWithViews();
             // call Interface & Implementasi
             services.AddScoped<IEmployee, Repository.EmployeeRepository>();
+
+
+            //register dbcontext
+            services.AddDbContext<ShopeeDbContext>(opts =>
+            {
+                opts.UseSqlServer(Configuration["ConnectionStrings:ShopeeDb"]);
+            });
 
         }
 

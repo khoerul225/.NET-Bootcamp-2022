@@ -15,5 +15,9 @@ namespace Northwind.Persistence
         }
 
         public DbSet<Category> Categories { get; set; }
+
+        //ditambahkan get set di db context agar dapat diakses
+        public DbSet<Product> Products { get; set; }
+
     }
 }

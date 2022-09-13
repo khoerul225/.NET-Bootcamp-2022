@@ -1,17 +1,20 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Northwind.Web.Repository;
+using Northwind.Persistence;
 using Northwind.Domain.Enities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Northwind.Persistence;
-using Microsoft.EntityFrameworkCore;
+
+
+
 
 namespace Northwind.Web
 {
@@ -66,6 +69,8 @@ namespace Northwind.Web
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            ShopeePopulateData.PopulateData(app);
         }
     }
 }

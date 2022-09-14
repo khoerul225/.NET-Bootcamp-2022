@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,9 @@ namespace Northwind.Domain.Enities
     {
         public int CategoryId { get; set; }
         public string CategoryName { get; set; }
+
+        [Required]
+        [StringLength (50, ErrorMessage ="Description Canot be longer than 50")]
 
         public string Description { get; set; } 
         

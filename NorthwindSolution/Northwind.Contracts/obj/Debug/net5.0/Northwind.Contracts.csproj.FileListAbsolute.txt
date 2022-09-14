@@ -1,0 +1,12 @@
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Contracts\bin\Debug\net5.0\Northwind.Contracts.deps.json
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Contracts\bin\Debug\net5.0\Northwind.Contracts.dll
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Contracts\bin\Debug\net5.0\Northwind.Contracts.pdb
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Contracts\obj\Debug\net5.0\Northwind.Contracts.csproj.AssemblyReference.cache
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Contracts\obj\Debug\net5.0\Northwind.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Contracts\obj\Debug\net5.0\Northwind.Contracts.AssemblyInfoInputs.cache
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Contracts\obj\Debug\net5.0\Northwind.Contracts.AssemblyInfo.cs
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Contracts\obj\Debug\net5.0\Northwind.Contracts.csproj.CoreCompileInputs.cache
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Contracts\obj\Debug\net5.0\Northwind.Contracts.dll
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Contracts\obj\Debug\net5.0\refint\Northwind.Contracts.dll
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Contracts\obj\Debug\net5.0\Northwind.Contracts.pdb
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Contracts\obj\Debug\net5.0\ref\Northwind.Contracts.dll

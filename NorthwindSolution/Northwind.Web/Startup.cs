@@ -12,9 +12,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
-
-
+using Microsoft.Extensions.FileProviders;
+using System.IO;
+using Microsoft.AspNetCore.Http;
 
 namespace Northwind.Web
 {
@@ -58,6 +58,13 @@ namespace Northwind.Web
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            ///set resourec to static file
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"Resource")),
+                RequestPath = new PathString("/Resource")
+            });
 
             app.UseRouting();
 

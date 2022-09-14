@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Northwind.Contracts.Dto;
 using Northwind.Domain.Enities;
 using Northwind.Persistence;
 
@@ -54,15 +56,25 @@ namespace Northwind.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CategoryId,CategoryName,Description,Photo")] Category category)
+        public async Task<IActionResult> Create(CategoryDto categoryDto)
         {
+
             if (ModelState.IsValid)
+            {
+                var file = categoryDto.FilePhoto;
+                var folderName = Path.Combine("Resources","Images");
+                var pathSave = Path.Combine(Directory.GetCurrentDirectory(), folderName);
+
+            }
+            return View(categoryDto);
+
+/*            if (ModelState.IsValid)
             {
                 _context.Add(category);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(category);
+            return View(category);*/
         }
 
         // GET: Categories/Edit/5

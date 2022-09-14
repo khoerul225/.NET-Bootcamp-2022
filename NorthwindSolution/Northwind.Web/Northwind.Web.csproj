@@ -20,8 +20,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Northwind.Contracts\Northwind.Contracts.csproj" />
     <ProjectReference Include="..\Northwind.Domain\Northwind.Domain.csproj" />
     <ProjectReference Include="..\Northwind.Persistence\Northwind.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\Images\" />
   </ItemGroup>
 
 </Project>

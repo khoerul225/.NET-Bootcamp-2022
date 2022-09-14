@@ -1,25 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Net.Http.Headers;
 using System.Threading.Tasks;
-using DocumentFormat.OpenXml.Drawing.Diagrams;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Northwind.Contracts.Dto;
-using Northwind.Domain.Enities;
+using Northwind.Domain.Models;
 using Northwind.Persistence;
-using Category = Northwind.Domain.Enities.Category;
 
 namespace Northwind.Web.Controllers
 {
     public class CategoriesController : Controller
     {
-        private readonly ShopeeDbContext _context;
+        private readonly NorthwindContext _context;
 
-        public CategoriesController(ShopeeDbContext context)
+        public CategoriesController(NorthwindContext context)
         {
             _context = context;
         }
@@ -59,56 +54,15 @@ namespace Northwind.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(CategoryDto categoryDto)
+        public async Task<IActionResult> Create([Bind("CategoryId,CategoryName,Description,Picture")] Category category)
         {
-
             if (ModelState.IsValid)
             {
-                try
-                {
-                    var file = categoryDto.FilePhoto;
-                    var folderName = Path.Combine("Resources", "Images");
-                    var pathToSave = Path.Combine(Directory.GetCurrentDirectory(), folderName);
-                    if (file.Length > 0)
-                    {
-                        var fileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
-                        var fullPath = Path.Combine(pathToSave, fileName);
-                        var dbPath = Path.Combine(folderName, fileName);
-                        using (var stream = new FileStream(fullPath, FileMode.Create))
-                        {
-                            file.CopyTo(stream);
-                        }
-
-                        var category = new Category
-                        {
-                            CategoryName = categoryDto.CategoryName,
-                            CategoryId = categoryDto.CategoryId,
-                            Description = categoryDto.Description,
-                            Photo = fileName
-                        };
-                        _context.Add(category);
-                        await _context.SaveChangesAsync();
-                        return RedirectToAction(nameof(Index));
-
-                    }
-                }
-                catch (Exception ex)
-                {
-                    throw;
-                }
-
-
-
-            }
-            return View(categoryDto);
-
-/*            if (ModelState.IsValid)
-            {
-                _context.Ad
-            }d(category);
+                _context.Add(category);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            return View(category);*/
+            }
+            return View(category);
         }
 
         // GET: Categories/Edit/5
@@ -132,7 +86,7 @@ namespace Northwind.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("CategoryId,CategoryName,Description,Photo")] Category category)
+        public async Task<IActionResult> Edit(int id, [Bind("CategoryId,CategoryName,Description,Picture")] Category category)
         {
             if (id != category.CategoryId)
             {

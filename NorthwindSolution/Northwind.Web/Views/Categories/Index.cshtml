@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Northwind.Domain.Enities.Category>
+﻿@model IEnumerable<Northwind.Domain.Models.Category>
 
 @{
     ViewData["Title"] = "Index";
@@ -19,7 +19,7 @@
                 @Html.DisplayNameFor(model => model.Description)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Photo)
+                @Html.DisplayNameFor(model => model.Picture)
             </th>
             <th></th>
         </tr>
@@ -34,12 +34,7 @@
                 @Html.DisplayFor(modelItem => item.Description)
             </td>
             <td>
-                    <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
-                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" title="Lilian Fuller">
-                            <img src="~/Resources/images/@Html.DisplayFor(modelItem => item.Photo)" alt="photo" />
-                        </li>
-                    </ul>
- 
+                @Html.DisplayFor(modelItem => item.Picture)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.CategoryId">Edit</a> |

@@ -36,9 +36,9 @@ namespace Northwind.Web
 
 
             //register dbcontext
-            services.AddDbContext<ShopeeDbContext>(opts =>
+            services.AddDbContext<NorthwindContext>(opts =>
             {
-                opts.UseSqlServer(Configuration["ConnectionStrings:ShopeeDb"]);
+                opts.UseSqlServer(Configuration["ConnectionStrings:NorthwindDb"]);
             });
 
         }
@@ -77,7 +77,7 @@ namespace Northwind.Web
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            ShopeePopulateData.PopulateData(app);
+/*            ShopeePopulateData.PopulateData(app);*/
         }
     }
 }

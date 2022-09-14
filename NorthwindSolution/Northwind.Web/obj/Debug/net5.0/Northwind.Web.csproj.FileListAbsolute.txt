@@ -151,6 +151,13 @@ D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\zh-Hans\Micros
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\System.IO.Pipelines.dll
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\Northwind.Contracts.dll
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\Northwind.Contracts.pdb
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\DocumentFormat.OpenXml.dll
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\System.IO.Packaging.dll
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Categories\Create.cshtml.g.cs
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Categories\Delete.cshtml.g.cs
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Categories\Details.cshtml.g.cs
@@ -161,10 +168,3 @@ D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Pr
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Products\Details.cshtml.g.cs
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Products\Edit.cshtml.g.cs
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Products\Index.cshtml.g.cs
-D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
-D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
-D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\System.IO.Pipelines.dll
-D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\Northwind.Contracts.dll
-D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\Northwind.Contracts.pdb
-D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\DocumentFormat.OpenXml.dll
-D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\System.IO.Packaging.dll

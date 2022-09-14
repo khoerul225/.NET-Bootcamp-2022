@@ -166,3 +166,5 @@ D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\Microsoft.Exte
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\System.IO.Pipelines.dll
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\Northwind.Contracts.dll
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\Northwind.Contracts.pdb
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\DocumentFormat.OpenXml.dll
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\System.IO.Packaging.dll

@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
+using DocumentFormat.OpenXml.Drawing.Diagrams;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Northwind.Contracts.Dto;
 using Northwind.Domain.Enities;
 using Northwind.Persistence;
+using Category = Northwind.Domain.Enities.Category;
 
 namespace Northwind.Web.Controllers
 {
@@ -61,19 +64,50 @@ namespace Northwind.Web.Controllers
 
             if (ModelState.IsValid)
             {
-                var file = categoryDto.FilePhoto;
-                var folderName = Path.Combine("Resources","Images");
-                var pathSave = Path.Combine(Directory.GetCurrentDirectory(), folderName);
+                try
+                {
+                    var file = categoryDto.FilePhoto;
+                    var folderName = Path.Combine("Resources", "Images");
+                    var pathToSave = Path.Combine(Directory.GetCurrentDirectory(), folderName);
+                    if (file.Length > 0)
+                    {
+                        var fileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
+                        var fullPath = Path.Combine(pathToSave, fileName);
+                        var dbPath = Path.Combine(folderName, fileName);
+                        using (var stream = new FileStream(fullPath, FileMode.Create))
+                        {
+                            file.CopyTo(stream);
+                        }
+
+                        var category = new Category
+                        {
+                            CategoryName = categoryDto.CategoryName,
+                            CategoryId = categoryDto.CategoryId,
+                            Description = categoryDto.Description,
+                            Photo = fileName
+                        };
+                        _context.Add(category);
+                        await _context.SaveChangesAsync();
+                        return RedirectToAction(nameof(Index));
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw;
+                }
+
+
 
             }
             return View(categoryDto);
 
 /*            if (ModelState.IsValid)
             {
-                _context.Add(category);
+                _context.Ad
+            }d(category);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            }
             return View(category);*/
         }
 

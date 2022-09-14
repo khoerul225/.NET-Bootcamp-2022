@@ -62,8 +62,8 @@ namespace Northwind.Web
             ///set resourec to static file
             app.UseStaticFiles(new StaticFileOptions()
             {
-                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"Resource")),
-                RequestPath = new PathString("/Resource")
+                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"Resources")),
+                RequestPath = new PathString("/Resources")
             });
 
             app.UseRouting();

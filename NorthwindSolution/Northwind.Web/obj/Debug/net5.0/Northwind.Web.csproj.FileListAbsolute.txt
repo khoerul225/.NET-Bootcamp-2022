@@ -161,3 +161,8 @@ D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Pr
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Products\Details.cshtml.g.cs
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Products\Edit.cshtml.g.cs
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Products\Index.cshtml.g.cs
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\System.IO.Pipelines.dll
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\Northwind.Contracts.dll
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\Northwind.Contracts.pdb

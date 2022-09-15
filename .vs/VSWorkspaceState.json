@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\NorthwindSolution",
+    "\\NorthwindSolution\\Northwind.Persistence",
+    "\\NorthwindSolution\\Northwind.Persistence\\RepositoryContext",
+    "\\NorthwindSolution\\Northwind.Web"
   ],
-  "SelectedNode": "\\NorthwindSolution.sln",
+  "SelectedNode": "\\NorthwindSolution\\Northwind.Web",
   "PreviewInSolutionExplorer": false
 }

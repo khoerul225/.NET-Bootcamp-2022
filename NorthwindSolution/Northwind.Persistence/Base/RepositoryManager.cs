@@ -1,4 +1,5 @@
 ﻿using Northwind.Domain.Base;
+using Northwind.Domain.Repositories;
 using Northwind.Domain.Repository;
 using Northwind.Persistence.Repositories;
 using System;
@@ -13,11 +14,13 @@ namespace Northwind.Persistence.Base
     {
         private NorthwindContext _dbContext;
         private ICategoryRepository _categoryRepository;
+        private ICustomerRepository _customerRepository;
 
-        public RepositoryManager (NorthwindContext dbContext)
+        public RepositoryManager(NorthwindContext dbContext)
         {
             _dbContext = dbContext;
         }
+
         public ICategoryRepository CategoryRepository
         {
             get
@@ -30,9 +33,21 @@ namespace Northwind.Persistence.Base
             }
         }
 
+        /// <summary>
+        public ICustomerRepository CustomerRepository
+        {
+            get
+            {
+                if (_customerRepository == null)
+                {
+                    _customerRepository = new CustomerRepository(_dbContext);
+                }
+                return _customerRepository;
+            }
+        }
+
         public void Save() => _dbContext.SaveChanges();
 
-        public async Task SaveAsync()=> await _dbContext.SaveChangesAsync();
-       
+        public async Task SaveAsync() => await _dbContext.SaveChangesAsync();
     }
 }

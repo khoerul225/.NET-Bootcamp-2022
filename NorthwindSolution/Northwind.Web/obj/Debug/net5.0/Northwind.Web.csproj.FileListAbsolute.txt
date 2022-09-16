@@ -168,3 +168,13 @@ D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Pr
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Products\Details.cshtml.g.cs
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Products\Edit.cshtml.g.cs
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Products\Index.cshtml.g.cs
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\CategoriesRepo\Create.cshtml.g.cs
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\CategoriesRepo\Delete.cshtml.g.cs
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\CategoriesRepo\Details.cshtml.g.cs
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\CategoriesRepo\Edit.cshtml.g.cs
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\CategoriesRepo\Index.cshtml.g.cs
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Customers\Create.cshtml.g.cs
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Customers\Delete.cshtml.g.cs
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Customers\Details.cshtml.g.cs
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Customers\Edit.cshtml.g.cs
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Customers\Index.cshtml.g.cs

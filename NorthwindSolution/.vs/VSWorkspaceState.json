@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Northwind.Contracts",
+    "\\Northwind.Domain",
+    "\\Northwind.Persistence",
     "\\Northwind.Web"
   ],
-  "SelectedNode": "\\Northwind.Web\\Northwind.Web.csproj",
   "PreviewInSolutionExplorer": false
 }

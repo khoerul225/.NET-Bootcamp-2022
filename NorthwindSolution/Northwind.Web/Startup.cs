@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Northwind.Web.Repository;
 using Northwind.Persistence;
+using Northwind.Domain;
 using Northwind.Domain.Enities;
 using System;
 using System.Collections.Generic;

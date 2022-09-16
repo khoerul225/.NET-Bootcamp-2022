@@ -1,4 +1,5 @@
-﻿using Northwind.Domain.Repository;
+﻿using Northwind.Domain.Repositories;
+using Northwind.Domain.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,10 @@ namespace Northwind.Domain.Base
     {
         ICategoryRepository CategoryRepository { get; }
 
+        ICustomerRepository CustomerRepository { get; }
+
         void Save();
+
         Task SaveAsync();
     }
 }

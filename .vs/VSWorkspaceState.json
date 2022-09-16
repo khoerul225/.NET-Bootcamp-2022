@@ -6,6 +6,6 @@
     "\\NorthwindSolution\\Northwind.Persistence\\RepositoryContext",
     "\\NorthwindSolution\\Northwind.Web"
   ],
-  "SelectedNode": "\\NorthwindSolution\\Northwind.Web",
+  "SelectedNode": "\\NorthwindSolution\\Northwind.Web\\appsettings.json",
   "PreviewInSolutionExplorer": false
 }

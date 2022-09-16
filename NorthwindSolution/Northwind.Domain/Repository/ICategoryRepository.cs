@@ -1,20 +1,24 @@
-﻿using System;
+﻿using Northwind.Domain.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Northwind.Domain;
-using Northwind.Domain.Enities;
 
-namespace Northwind.Domain.Repository
+namespace Northwind.Domain.Repositories
 {
     public interface ICategoryRepository
     {
-     Task<IEnumerable<Category>> GetAllCAtegory(bool trackChanges);
+        // trackChange => feature untuk mendeteksi perubahan data di object category
+        Task<IEnumerable<Category>> GetAllCategory(bool trackChanges);
 
-     void Insert (ICategoryRepository category);
-     void Edit (ICategoryRepository category);
-     void Remove(ICategoryRepository category);
+        Task<Category> GetCategoryById(int categoryId, bool trackChanges);
+
+        void Insert(Category category);
+
+        void Edit(Category category);
+
+        void Remove(Category category);
 
     }
 }

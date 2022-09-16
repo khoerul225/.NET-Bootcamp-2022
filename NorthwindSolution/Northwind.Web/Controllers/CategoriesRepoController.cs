@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Northwind.Domain.Models;
 using Northwind.Domain.Base;
+using Northwind.Domain.Models;
 using Northwind.Persistence;
 
 namespace Northwind.Web.Controllers
@@ -14,7 +14,6 @@ namespace Northwind.Web.Controllers
     public class CategoriesRepoController : Controller
     {
         //private readonly NorthwindContext _context;
-
         private readonly IRepositoryManager _context;
 
         public CategoriesRepoController(IRepositoryManager context)
@@ -36,9 +35,8 @@ namespace Northwind.Web.Controllers
                 return NotFound();
             }
 
-            /*            var category = await _context.Categories
-                            .FirstOrDefaultAsync(m => m.CategoryId == id);*/
-
+            /*  var category = await _context.Categories
+                  .FirstOrDefaultAsync(m => m.CategoryId == id);*/
             var category = await _context.CategoryRepository.GetCategoryById((int)id, false);
             if (category == null)
             {
@@ -63,11 +61,8 @@ namespace Northwind.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                /*                _context.Add(category);
-                                await _context.SaveAsync();*/
-                var category = await_context.Add(category);
-                await _context.SaveAsync();
-
+                /*_context.Add(category);
+                await _context.SaveChangesAsync();*/
                 _context.CategoryRepository.Insert(category);
                 await _context.SaveAsync();
                 return RedirectToAction(nameof(Index));
@@ -83,9 +78,8 @@ namespace Northwind.Web.Controllers
                 return NotFound();
             }
 
-            /*            var category = await _context.Categories.FindAsync(id);*/
-            /*var category = await _context.CategoryRepository.GetCategoryById.(id);
-*/
+            //var category = await _context.Categories.FindAsync(id);
+            var category = await _context.CategoryRepository.GetCategoryById((int)id, true);
             if (category == null)
             {
                 return NotFound();
@@ -109,24 +103,23 @@ namespace Northwind.Web.Controllers
             {
                 try
                 {
-                    /*                    _context.Update(category);
-                                        await _context.SaveChangesAsync();*/
+                    /*_context.Update(category);*/
+                    /*await _context.SaveChangesAsync();*/
                     _context.CategoryRepository.Edit(category);
                     await _context.SaveAsync();
-
 
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    /*                    if (!CategoryExists(category.CategoryId))
-                                        {
-                                            return NotFound();
-                                        }
-                                        else
-                                        {
-                                            throw;
-                                        }*/
-                    throw
+                    /*  if (!CategoryExists(category.CategoryId))
+                      {
+                          return NotFound();
+                      }
+                      else
+                      {
+                          throw;
+                      }*/
+                    throw;
                 }
                 return RedirectToAction(nameof(Index));
             }
@@ -140,17 +133,11 @@ namespace Northwind.Web.Controllers
             {
                 return NotFound();
             }
-                /*
-                            var category = await _context.Categories
-                                .FirstOrDefaultAsync(m => m.CategoryId == id)*/;
 
-            var category = await _context.CategoryRepository.GetCategoryById((int)id, false)
-                _context.CategoryRepository.Remove(category);
-            _context.SaveAsync();
-            return RedirectToAction
-
-
-                if (category == null)
+            /*var category = await _context.Categories
+                .FirstOrDefaultAsync(m => m.CategoryId == id);*/
+            var category = await _context.CategoryRepository.GetCategoryById((int)id, false);
+            if (category == null)
             {
                 return NotFound();
             }
@@ -163,15 +150,19 @@ namespace Northwind.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var category = await _context.Categories.FindAsync(id);
+            /*var category = await _context.Categories.FindAsync(id);
             _context.Categories.Remove(category);
-            await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();*/
+            var category = await _context.CategoryRepository.GetCategoryById((int)id, false);
+            _context.CategoryRepository.Remove(category);
+            await _context.SaveAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool CategoryExists(int id)
+/*        private bool CategoryExists(int id)
         {
             return _context.Categories.Any(e => e.CategoryId == id);
-        }
+        }*/
+
     }
 }

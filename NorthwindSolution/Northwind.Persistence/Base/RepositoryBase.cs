@@ -9,8 +9,10 @@ using System.Threading.Tasks;
 
 namespace Northwind.Persistence.Base
 {
+
     public abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
     {
+
         protected NorthwindContext _dbContext;
 
         protected RepositoryBase(NorthwindContext dbContext)
@@ -18,25 +20,19 @@ namespace Northwind.Persistence.Base
             _dbContext = dbContext;
         }
 
-
         public void Create(T entity) => _dbContext.Set<T>().Add(entity);
+
 
         public void Delete(T entity) => _dbContext.Set<T>().Remove(entity);
 
-
-        //mengecek apakah objek yang di fetch siap di insert ke database
         public IQueryable<T> FindAll(bool trackChanges) =>
-       !trackChanges ? _dbContext.Set<T>().AsNoTracking() : _dbContext.Set<T>();
+         !trackChanges ? _dbContext.Set<T>().AsNoTracking() : _dbContext.Set<T>();
 
 
         public IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression, bool trackChanges) =>
             !trackChanges ? _dbContext.Set<T>().Where(expression).AsNoTracking() :
              _dbContext.Set<T>().Where(expression);
 
-        public void Update(T entity)
-        {
-            throw new NotImplementedException();
-        }
+        public void Update(T entity) => _dbContext.Set<T>().Update(entity);
     }
 }
-

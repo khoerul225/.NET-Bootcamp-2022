@@ -15,6 +15,8 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.FileProviders;
 using System.IO;
 using Microsoft.AspNetCore.Http;
+using Northwind.Domain.Base;
+using Northwind.Persistence.Base;
 
 namespace Northwind.Web
 {
@@ -33,6 +35,7 @@ namespace Northwind.Web
             services.AddControllersWithViews();
             // call Interface & Implementasi
             services.AddScoped<IEmployee, Repository.EmployeeRepository>();
+            services.AddScoped<IRepositoryManager, RepositoryManager>();
 
 
             //register dbcontext

@@ -2071,7 +2071,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Http.Features": "5.0.17"
+          "Microsoft.AspNetCore.Http.Features": "5.0.17",
+          "Northwind.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Northwind.Contracts.dll": {}
@@ -2096,6 +2097,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
+          "Northwind.Contracts": "1.0.0",
           "Northwind.Domain": "1.0.0"
         },
         "compile": {

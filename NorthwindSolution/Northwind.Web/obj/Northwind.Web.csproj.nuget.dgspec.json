@@ -27,7 +27,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\.NET Bootcamp\\NorthwindSolution\\Northwind.Domain\\Northwind.Domain.csproj": {
+                "projectPath": "D:\\.NET Bootcamp\\NorthwindSolution\\Northwind.Domain\\Northwind.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -142,6 +146,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "D:\\.NET Bootcamp\\NorthwindSolution\\Northwind.Contracts\\Northwind.Contracts.csproj": {
+                "projectPath": "D:\\.NET Bootcamp\\NorthwindSolution\\Northwind.Contracts\\Northwind.Contracts.csproj"
+              },
               "D:\\.NET Bootcamp\\NorthwindSolution\\Northwind.Domain\\Northwind.Domain.csproj": {
                 "projectPath": "D:\\.NET Bootcamp\\NorthwindSolution\\Northwind.Domain\\Northwind.Domain.csproj"
               }

@@ -29,6 +29,7 @@ namespace Northwind.Services
         public async Task<IEnumerable<CategoryDto>> GetAllCategory(bool trackChanges)
         {
             var categoryModel = await _repositoryManager.CategoryRepository.GetAllCategory(trackChanges);
+            //source = Category model, target Category Dto
             var categoryDto = _mapper.Map<IEnumerable<CategoryDto>>(categoryModel);
             return categoryDto;
         }

@@ -1,11 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\NorthwindSolution",
-    "\\NorthwindSolution\\Northwind.Persistence",
-    "\\NorthwindSolution\\Northwind.Persistence\\RepositoryContext",
-    "\\NorthwindSolution\\Northwind.Web"
+    ""
   ],
-  "SelectedNode": "\\NorthwindSolution\\Northwind.Web\\appsettings.json",
+  "SelectedNode": "\\QUIZ05.sln",
   "PreviewInSolutionExplorer": false
 }

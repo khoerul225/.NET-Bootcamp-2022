@@ -178,3 +178,17 @@ D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Cu
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Customers\Details.cshtml.g.cs
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Customers\Edit.cshtml.g.cs
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\Customers\Index.cshtml.g.cs
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\AutoMapper.dll
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\Northwind.Services.Abstraction.dll
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\Northwind.Services.dll
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\Northwind.Services.Abstraction.pdb
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\Northwind.Services.pdb
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\CategoriesService\Create.cshtml.g.cs
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\CategoriesService\Delete.cshtml.g.cs
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\CategoriesService\Details.cshtml.g.cs
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\CategoriesService\Edit.cshtml.g.cs
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Razor\Views\CategoriesService\Index.cshtml.g.cs

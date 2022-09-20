@@ -18,6 +18,8 @@ using System.IO;
 using Microsoft.AspNetCore.Http;
 using Northwind.Domain.Base;
 using Northwind.Persistence.Base;
+using Northwind.Services;
+using Northwind.Services.Abstraction;
 
 namespace Northwind.Web
 {
@@ -37,7 +39,10 @@ namespace Northwind.Web
             // call Interface & Implementasi
             services.AddScoped<IEmployee, Repository.EmployeeRepository>();
             services.AddScoped<IRepositoryManager, RepositoryManager>();
-
+            services.AddScoped<IServiceManager, ServiceManager>();
+            
+            //ditambahkan automapper
+            services.AddAutoMapper(typeof(Startup));
 
             //register dbcontext
             services.AddDbContext<NorthwindContext>(opts =>

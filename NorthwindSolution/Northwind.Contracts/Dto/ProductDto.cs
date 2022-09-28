@@ -22,7 +22,6 @@ namespace Northwind.Contracts.Dto
 
         public int CategoryId { get; set; }
 
-        //
         public CategoryDto Category { get; set; }
         public virtual ICollection<CategoryDto> Categories { get; set; }
 

@@ -58,12 +58,12 @@ namespace Northwind.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CustomerId,CompanyName,ContactName,ContactTitle,Address,City,Region,PostalCode,Country,Phone,Fax")] Customer customer)
+        public IActionResult Create([Bind("CustomerId,CompanyName,ContactName,ContactTitle,Address,City,Region,PostalCode,Country,Phone,Fax")] Customer customer)
         {
             if (ModelState.IsValid)
             {
-/*                _context.Add(customer);
-                await _context.SaveChangesAsync();*/
+                /*                _context.Add(customer);
+                                await _context.SaveChangesAsync();*/
                 _context.CustomerRepository.Insert(customer);
                 return RedirectToAction(nameof(Index));
             }

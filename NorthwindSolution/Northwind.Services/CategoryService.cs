@@ -11,7 +11,7 @@ namespace Northwind.Services
     public class CategoryService : ICategoryService
     {
         //2 private dibawah kemudian di block kemudian ctrl + . (dot) generate constructor
-        private IRepositoryManager _repositoryManager;
+        private readonly IRepositoryManager _repositoryManager;
         private readonly IMapper _mapper;
         
         //defedency injection

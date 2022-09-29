@@ -1,3 +1,8 @@
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Persistence\obj\Debug\net5.0\Northwind.Persistence.csproj.AssemblyReference.cache
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Persistence\obj\Debug\net5.0\Northwind.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Persistence\obj\Debug\net5.0\Northwind.Persistence.AssemblyInfoInputs.cache
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Persistence\obj\Debug\net5.0\Northwind.Persistence.AssemblyInfo.cs
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Persistence\obj\Debug\net5.0\Northwind.Persistence.csproj.CoreCompileInputs.cache
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Persistence\bin\Debug\net5.0\Northwind.Persistence.deps.json
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Persistence\bin\Debug\net5.0\Northwind.Persistence.runtimeconfig.json
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Persistence\bin\Debug\net5.0\Northwind.Persistence.runtimeconfig.dev.json
@@ -7,11 +12,6 @@ D:\.NET Bootcamp\NorthwindSolution\Northwind.Persistence\bin\Debug\net5.0\Northw
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Persistence\bin\Debug\net5.0\Northwind.Domain.dll
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Persistence\bin\Debug\net5.0\Northwind.Contracts.pdb
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Persistence\bin\Debug\net5.0\Northwind.Domain.pdb
-D:\.NET Bootcamp\NorthwindSolution\Northwind.Persistence\obj\Debug\net5.0\Northwind.Persistence.csproj.AssemblyReference.cache
-D:\.NET Bootcamp\NorthwindSolution\Northwind.Persistence\obj\Debug\net5.0\Northwind.Persistence.GeneratedMSBuildEditorConfig.editorconfig
-D:\.NET Bootcamp\NorthwindSolution\Northwind.Persistence\obj\Debug\net5.0\Northwind.Persistence.AssemblyInfoInputs.cache
-D:\.NET Bootcamp\NorthwindSolution\Northwind.Persistence\obj\Debug\net5.0\Northwind.Persistence.AssemblyInfo.cs
-D:\.NET Bootcamp\NorthwindSolution\Northwind.Persistence\obj\Debug\net5.0\Northwind.Persistence.csproj.CoreCompileInputs.cache
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Persistence\obj\Debug\net5.0\Northwind.Persistence.csproj.CopyComplete
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Persistence\obj\Debug\net5.0\Northwind.Persistence.dll
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Persistence\obj\Debug\net5.0\refint\Northwind.Persistence.dll

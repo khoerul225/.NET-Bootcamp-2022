@@ -1,6 +1,5 @@
 ﻿using Northwind.Domain.Base;
 using Northwind.Domain.Repositories;
-using Northwind.Domain.Repository;
 using Northwind.Persistence.Repositories;
 using System;
 using System.Collections.Generic;
@@ -12,11 +11,12 @@ namespace Northwind.Persistence.Base
 {
     public class RepositoryManager : IRepositoryManager
     {
-        private readonly NorthwindContext _dbContext;
-        private  ICategoryRepository _categoryRepository;
+        private NorthwindContext _dbContext;
+        private ICategoryRepository _categoryRepository;
         private ICustomerRepository _customerRepository;
         private IProductRepository _productRepository;
-
+        private ISupplierRepository _supplierRepository;
+        private IProductPhotoPhotoRepository _productPhotoRepository;
 
         public RepositoryManager(NorthwindContext dbContext)
         {
@@ -35,8 +35,7 @@ namespace Northwind.Persistence.Base
             }
         }
 
-        /// <summary>
-        public ICustomerRepository CustomerRepository
+        public ICustomerRepository EmployeeRepository
         {
             get
             {
@@ -47,6 +46,7 @@ namespace Northwind.Persistence.Base
                 return _customerRepository;
             }
         }
+
         public IProductRepository ProductRepository
         {
             get
@@ -58,6 +58,31 @@ namespace Northwind.Persistence.Base
                 return _productRepository;
             }
         }
+
+        public ISupplierRepository SupplierRepository
+        {
+            get
+            {
+                if (_supplierRepository == null)
+                {
+                    _supplierRepository = new SupplierRepository(_dbContext);
+                }
+                return _supplierRepository;
+            }
+        }
+
+        public IProductPhotoPhotoRepository ProductPhotoRepository
+        {
+            get
+            {
+                if (_productPhotoRepository == null)
+                {
+                    _productPhotoRepository = new ProductPhotoRepository(_dbContext);
+                }
+                return _productPhotoRepository;
+            }
+        }
+
         public void Save() => _dbContext.SaveChanges();
 
         public async Task SaveAsync() => await _dbContext.SaveChangesAsync();

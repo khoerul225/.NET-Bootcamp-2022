@@ -10,15 +10,20 @@ namespace Northwind.Contracts.Dto.Product
 {
     public class ProductPhotoGroupDto
     {
-        public ProductForCreateDto productForCreateDto { get; set; }
+
+        public ProductForCreateDto ProductForCreateDto { get; set; }
         [Display(Name = "Photo 1")]
+
         public IFormFile Photo1 { get; set; }
 
         [Display(Name = "Photo 2")]
+
         public IFormFile Photo2 { get; set; }
 
         [Display(Name = "Photo 3")]
         public IFormFile Photo3 { get; set; }
+
+        public List<IFormFile> AllPhoto { get; set; }
 
 
 

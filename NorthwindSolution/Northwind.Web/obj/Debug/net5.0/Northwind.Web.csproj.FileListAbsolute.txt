@@ -1,3 +1,11 @@
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Northwind.Web.csproj.AssemblyReference.cache
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Northwind.Web.GeneratedMSBuildEditorConfig.editorconfig
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Northwind.Web.AssemblyInfoInputs.cache
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Northwind.Web.AssemblyInfo.cs
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Northwind.Web.csproj.CoreCompileInputs.cache
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Northwind.Web.MvcApplicationPartsAssemblyInfo.cache
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Northwind.Web.RazorAssemblyInfo.cache
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Northwind.Web.RazorAssemblyInfo.cs
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\appsettings.Development.json
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\appsettings.json
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\Northwind.Web.exe
@@ -137,15 +145,6 @@ D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\Northwind.Doma
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\Northwind.Persistence.pdb
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\Northwind.Services.Abstraction.pdb
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\bin\Debug\net5.0\Northwind.Services.pdb
-D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Northwind.Web.csproj.AssemblyReference.cache
-D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Northwind.Web.GeneratedMSBuildEditorConfig.editorconfig
-D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Northwind.Web.AssemblyInfoInputs.cache
-D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Northwind.Web.AssemblyInfo.cs
-D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Northwind.Web.csproj.CoreCompileInputs.cache
-D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Northwind.Web.MvcApplicationPartsAssemblyInfo.cs
-D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Northwind.Web.MvcApplicationPartsAssemblyInfo.cache
-D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Northwind.Web.RazorAssemblyInfo.cache
-D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Northwind.Web.RazorAssemblyInfo.cs
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\scopedcss\bundle\Northwind.Web.styles.css
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\staticwebassets\Northwind.Web.StaticWebAssets.Manifest.cache
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Northwind.Web.TagHelpers.input.cache
@@ -212,3 +211,4 @@ D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\refint\Northwi
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Northwind.Web.pdb
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Northwind.Web.genruntimeconfig.cache
 D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\ref\Northwind.Web.dll
+D:\.NET Bootcamp\NorthwindSolution\Northwind.Web\obj\Debug\net5.0\Northwind.Web.MvcApplicationPartsAssemblyInfo.cs

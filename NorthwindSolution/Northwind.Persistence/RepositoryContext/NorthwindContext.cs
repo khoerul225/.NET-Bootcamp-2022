@@ -52,6 +52,7 @@ namespace Northwind.Persistence
         public virtual DbSet<ProductPhoto> ProductPhotos { get; set; }
 
 
+
         //dimatikan
         /*       protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
                {

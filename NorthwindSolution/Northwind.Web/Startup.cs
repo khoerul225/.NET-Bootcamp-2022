@@ -40,7 +40,8 @@ namespace Northwind.Web
             services.AddScoped<IEmployee, Repository.EmployeeRepository>();
             services.AddScoped<IRepositoryManager, RepositoryManager>();
             services.AddScoped<IServiceManager, ServiceManager>();
-            
+            //Menamabahkan Scope untuk Utilty service
+            services.AddScoped<IUtilityService, UtilityService>();
             //ditambahkan automapper
             services.AddAutoMapper(typeof(Startup));
 

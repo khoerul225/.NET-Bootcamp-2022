@@ -16,20 +16,26 @@ namespace Northwind.Contracts.Dto.Product
         public string ProductName { get; set; }
 
         [Display(Name = "Supplier")]
+        [Required]
         public int? SupplierId { get; set; }
 
         [Display(Name = "Category")]
+        [Required]
         public int? CategoryId { get; set; }
         public string QuantityPerUnit { get; set; }
-
+        
         [Display(Name = "Price")]
+        [Required]
         public decimal? UnitPrice { get; set; }
 
         [Display(Name = "Units In Stock")]
+        [Required]
         public short? UnitsInStock { get; set; }
         public short? UnitsOnOrder { get; set; }
         public short? ReorderLevel { get; set; }
         public bool Discontinued { get; set; }
+
+        public virtual CategoryDto Category { get; set; }
 
     }
 }

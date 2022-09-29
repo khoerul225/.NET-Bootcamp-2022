@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Northwind.Domain.Repository
+namespace Northwind.Domain.Repositories
 {
     public interface ICustomerRepository
     {

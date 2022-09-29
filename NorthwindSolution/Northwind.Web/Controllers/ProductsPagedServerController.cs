@@ -17,12 +17,16 @@ namespace Northwind.Web.Controllers
     {
         private readonly NorthwindContext _context;
         private readonly IServiceManager _serviceContext;
+        private readonly IUtilityService _utilityService;
 
-        public ProductsPagedServerController(NorthwindContext context, IServiceManager serviceContext)
+        public ProductsPagedServerController(NorthwindContext context, IServiceManager serviceContext, IUtilityService utilityService)
         {
             _context = context;
             _serviceContext = serviceContext;
+            _utilityService = utilityService;
         }
+
+
 
         // GET: ProductsPagedServer
         public async Task<IActionResult> Index(string sortOrder, string searchString,
@@ -42,8 +46,7 @@ namespace Northwind.Web.Controllers
 
             ViewBag.currentFilter = searchString;
 
-            var productDtos =
-                await _serviceContext.ProductService.GetProductPaged(pageIndex, pageSize, false);
+            var productDtos = await _serviceContext.ProductService.GetProductPaged(pageIndex, pageSize, false);
 
             var totalRows = productDtos.Count();
 
@@ -51,22 +54,21 @@ namespace Northwind.Web.Controllers
             {
                 productDtos = productDtos.Where(p => p.ProductName.ToLower().Contains(searchString.ToLower()));
             }
-            
 
-            ViewBag.NameProductSort = String.IsNullOrEmpty(sortOrder) ? "Product_name" : "";
-            ViewBag.UnitPriceSort = sortOrder == "Price" ? "UnitPrice" : "Price";
+            ViewBag.NameProductSort = String.IsNullOrEmpty(sortOrder) ? "product_name" : "";
+            ViewBag.UnitPriceSort = sortOrder == "price" ? "unit_price" : "price";
             var productSort = from item in productDtos
-                           select item;
+                              select item;
             switch (sortOrder)
             {
                 case "product_name":
                     productSort = productDtos.OrderByDescending(s => s.ProductName);
                     break;
-                case "Price":
+                case "price":
                     productSort = productDtos.OrderBy(s => s.UnitPrice);
                     break;
 
-                case "UnitPrice":
+                case "unit_price":
                     productSort = productDtos.OrderByDescending(s => s.UnitPrice);
                     break;
                 default:
@@ -77,17 +79,63 @@ namespace Northwind.Web.Controllers
             var productDtosPaged =
                 new StaticPagedList<ProductDto>(productSort, pageIndex, pageSize - (pageSize - 1), totalRows);
             ViewBag.pageList = new SelectList(new List<int> { 8, 15, 20 });
-            ViewBag.pageList2 = new SelectList(new List<string> 
-            {"Harga tertinggi","Harga Terendah"});
+
             return View(productDtosPaged);
         }
 
-        public async Task<IActionResult> CreateProductPhoto()
-         {
-            return View("create");
+        /*
+                [HttpPost]
+                public async Task<IActionResult> CreateProductPhoto(ProductPhotoGroupDto productPhotoGroupDto)
+
+                {
+                    if (ModelState.IsValid)
+                    {
+
+                        var productPhotoGroup = productPhotoGroupDto;
+                        var photo1 = _utilityService.UploadSingleFile(productPhotoGroup.Photo1);
+                        var photo2 = _utilityService.UploadSingleFile(productPhotoGroup.Photo2);
+                        var photo3 = _utilityService.UploadSingleFile(productPhotoGroup.Photo3);
+                    }
+
+                    ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryName");
+                    ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName");
+                    return View("Create");
+
+                }*/
+
+
+
+        [HttpPost]
+        public async Task<IActionResult> CreateProductPhoto(ProductPhotoGroupDto productPhotoGroupDto)
+
+        {
+
+            if (ModelState.IsValid)
+            {
+
+              var productPhotoGroup = productPhotoGroupDto;
+              var listPhoto = new List<ProductPhotoCreateDto>();
+                foreach (var itemPhoto in productPhotoGroup.AllPhoto)
+                {
+                    var fileName = _utilityService.UploadSingleFile(itemPhoto);
+                    var photo = new ProductPhotoCreateDto
+                    {
+                        PhotoFilename = fileName,
+                        PhotoFileSize = (short?)itemPhoto.Length,
+                        PhotoFileType = itemPhoto.ContentType
+                    };
+                    listPhoto.Add(photo);
+                }
+                _serviceContext.ProductService
+                    .CreateProductManyPhoto(productPhotoGroupDto.ProductForCreateDto, listPhoto);
+
+            }
+
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryName");
+            ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName");
+            return View("Create");
 
         }
-
         // GET: ProductsPagedServer/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -97,8 +145,8 @@ namespace Northwind.Web.Controllers
             }
 
             var product = await _context.Products
-                .Include(p => p.Category)
-                .Include(p => p.Supplier)
+                .Include(p => p.Category)/*
+                .Include(p => p.Supplier)*/
                 .FirstOrDefaultAsync(m => m.ProductId == id);
             if (product == null)
             {
@@ -121,16 +169,16 @@ namespace Northwind.Web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProductId,ProductName,SupplierId,CategoryId,QuantityPerUnit,UnitPrice,UnitsInStock,UnitsOnOrder,ReorderLevel,Discontinued")] Product product)
+        public async Task<IActionResult> Create([Bind("ProductId,ProductName,SupplierId,CategoryId,QuantityPerUnit,UnitPrice,UnitsInStock,UnitsOnOrder,ReorderLevel,Discontinued")] ProductForCreateDto product)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(product);
-                await _context.SaveChangesAsync();
+                _serviceContext.ProductService.Insert(product);
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryName", product.CategoryId);
-            ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName", product.SupplierId);
+            var allCategory = await _serviceContext.CategoryService.GetAllCategory(false);
+            ViewData["CategoryId"] = new SelectList(_context.Categories, "CategoryId", "CategoryName", product.CategoryId);/*
+            ViewData["SupplierId"] = new SelectList(_context.Suppliers, "SupplierId", "CompanyName", product.SupplierId);*/
             return View(product);
         }
 

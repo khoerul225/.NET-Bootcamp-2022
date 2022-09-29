@@ -2019,7 +2019,8 @@
       },
       "Northwind.Services.Abstraction/1.0.0": {
         "dependencies": {
-          "Northwind.Contracts": "1.0.0"
+          "Northwind.Contracts": "1.0.0",
+          "System.Collections": "4.3.0"
         },
         "runtime": {
           "Northwind.Services.Abstraction.dll": {}

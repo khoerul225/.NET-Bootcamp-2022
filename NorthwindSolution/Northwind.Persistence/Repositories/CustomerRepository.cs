@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Northwind.Domain.Models;
-using Northwind.Domain.Repository;
+using Northwind.Domain.Repositories;
+
 using Northwind.Persistence.Base;
 using System;
 using System.Collections.Generic;
